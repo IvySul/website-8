@@ -1,73 +1,47 @@
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: #f0f0f0;
   margin: 0;
-  font-family: sans-serif;
-}
-
-.nds {
-  width: 300px;
-  background: #333;
-  border-radius: 20px;
-  padding: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.top-screen, .bottom-screen {
-  width: 260px;
-  height: 140px;
-  background: #000;
-  border-radius: 10px;
-  margin: 10px 0;
-  position: relative;
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  background: #222;
 }
 
-.bottom-screen p {
-  color: #888;
-  font-size: 14px;
+.ds-container {
+  position: relative;
+  width: 600px; /* adjust as needed */
 }
 
-.animated-ball {
-  width: 30px;
-  height: 30px;
-  background: red;
-  border-radius: 50%;
+/* DS image */
+.ds-image {
+  width: 100%;
+  display: block;
+}
+
+/* Top screen area (manually sized & positioned) */
+.top-screen-animation {
   position: absolute;
-  animation: bounce 2s infinite ease-in-out;
+  top: 15%; /* adjust to match your DS image top screen */
+  left: 15%;
+  width: 70%;
+  height: 30%;
+  overflow: hidden;
+  background: #000;
+  border: 2px solid #222;
 }
 
-@keyframes bounce {
-  0%, 100% { top: 0; }
-  50% { top: 100px; }
+/* Simple pixel-art walker */
+.pixel-walker {
+  width: 20px;
+  height: 20px;
+  background: lime;
+  position: absolute;
+  animation: walk 2s linear infinite;
 }
 
-.buttons {
-  display: flex;
-  justify-content: space-around;
-  width: 80%;
-  margin-top: 10px;
-}
-
-.button.circle {
-  width: 30px;
-  height: 30px;
-  background: #555;
-  border-radius: 50%;
-}
-
-.button.rect {
-  width: 40px;
-  height: 15px;
-  background: #555;
-  border-radius: 5px;
+/* Animating the walker back and forth */
+@keyframes walk {
+  0%   { left: 0; background: #0f0; }
+  50%  { left: calc(100% - 20px); background: #ff0; }
+  100% { left: 0; background: #0f0; }
 }
