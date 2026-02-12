@@ -1,47 +1,4 @@
 body {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: #222;
-}
-
-.ds-container {
-  position: relative;
-  width: 600px; /* adjust as needed */
-}
-
-/* DS image */
-.ds-image {
-  width: 100%;
-  display: block;
-}
-
-/* Top screen area (manually sized & positioned) */
-.top-screen-animation {
-  position: absolute;
-  top: 15%; /* adjust to match your DS image top screen */
-  left: 15%;
-  width: 70%;
-  height: 30%;
-  overflow: hidden;
-  background: #000;
-  border: 2px solid #222;
-}
-
-/* Simple pixel-art walker */
-.pixel-walker {
-  width: 20px;
-  height: 20px;
-  background: lime;
-  position: absolute;
-  animation: walk 2s linear infinite;
-}
-
-/* Animating the walker back and forth */
-@keyframes walk {
-  0%   { left: 0; background: #0f0; }
-  50%  { left: calc(100% - 20px); background: #ff0; }
-  100% { left: 0; background: #0f0; }
+  margin: 10;
+  background-color:cream;
 }
