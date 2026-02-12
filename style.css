@@ -1,4 +1,17 @@
 body {
-  margin: 10;
-  background-color:cream;
+  margin: 20px;
+  font-size: 24px;
+  color: black;
+  overflow: hidden;
+}
+
+.pictures {
+  display: flex;
+  justify-content: center;  
+  align-items: center; 
+}
+
+.pictures img {
+  width: 400px;
+  height: auto;
 }
