@@ -1,9 +1,22 @@
 body {
-  margin: 20px;
-  font-size: 30px;
-  color: black;
+  margin: 15px;
+  font-size: 40px;
+  font-family: monospace;
+  color: purple;
   overflow: hidden;
   height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(255,220,180,.6), transparent 60%),
+    radial-gradient(circle at bottom, rgba(255,180,200,.4), transparent 60%),
+    linear-gradient(180deg,#fdf2e9 0%,#fbe4d8 100%);
+}
+
+p {
+  padding-left: 20px;
+}
+
+.pictures a {
+  display: inline-block;
 }
 
 .pictures {
@@ -15,4 +28,16 @@ body {
 .pictures img {
   width: 350px;
   height: auto;
+  animation: swing 2s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes swing {
+  0% { transform: rotate(-15deg); }
+  40% { transform: rotate(-15deg); } 
+  
+  50% { transform: rotate(15deg); } 
+  90% { transform: rotate(15deg); } 
+  
+  100% { transform: rotate(-15deg); }
 }
