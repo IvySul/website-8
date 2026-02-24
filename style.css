@@ -5,6 +5,7 @@ body {
   color: purple;
   overflow: hidden;
   height: 100vh;
+  font-family: "Gloria Hallelujah", "Caveat Brush", cursive;
   background:
     radial-gradient(circle at top, rgba(255,220,180,.6), transparent 60%),
     radial-gradient(circle at bottom, rgba(255,180,200,.4), transparent 60%),
