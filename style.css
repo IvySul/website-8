@@ -1,7 +1,6 @@
 body {
-  margin: 15px;
-  font-size: 40px;
-  font-family: monospace;
+  margin: 5px;
+  font-size: 35px;
   color: purple;
   overflow: hidden;
   height: 100vh;
@@ -14,6 +13,7 @@ body {
 
 p {
   padding-left: 20px;
+  margin-top: 0;
 }
 
 .pictures a {
